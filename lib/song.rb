@@ -43,5 +43,9 @@ end
 song3 = Song.create
 
 song5 = Song.create_by_name("The Middle")
+song6 = Song.create_by_name("The End")
 
-puts Song.all.include?(song5)
+#puts Song.all.include?(song5)
+
+puts song5
+puts Song.find_by_name("The Middle")
