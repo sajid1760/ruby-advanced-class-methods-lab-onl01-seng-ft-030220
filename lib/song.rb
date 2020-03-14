@@ -42,12 +42,8 @@ class Song
  end
   
   def self.find_or_create_by_name(name)
-    rett = ""
-    Song.all.each do |song|
-      if song.name == name then rett = song 
-      else rett = Song.create_by_name(name)
-      end
-     end
+    rett = Song.find_by_name(name)
+    if rett == "" then rett = Song.create_by_name(name) end
   rett
  end
  
