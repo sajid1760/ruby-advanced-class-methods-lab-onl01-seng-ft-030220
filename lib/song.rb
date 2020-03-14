@@ -22,6 +22,7 @@ class Song
   
 end
 
-song3 = Song.create
+song3 = Song.new
 
-puts Song.all.include?(song3)
+
+puts Song3
