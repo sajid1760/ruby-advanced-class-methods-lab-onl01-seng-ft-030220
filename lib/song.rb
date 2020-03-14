@@ -54,6 +54,9 @@ class Song
    song = Song.find_or_create_by_name(name)
    song.artist_name = artistname
    song
+ end
+ 
+ 
 end
 
 song3 = Song.create
