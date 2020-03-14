@@ -71,19 +71,19 @@ class Song
  
 end
 
-song3 = Song.create
+#song3 = Song.create
 
-song5 = Song.create_by_name("The Middle")
-song6 = Song.create_by_name("The End")
+#song5 = Song.create_by_name("The Middle")
+#song6 = Song.create_by_name("The End")
 
-song10 = Song.find_or_create_by_name("BlankSpace")
-song11 = Song.find_or_create_by_name("BlankSpace")
+#song10 = Song.find_or_create_by_name("BlankSpace")
+#song11 = Song.find_or_create_by_name("BlankSpace")
 
-song12 = Song.new_from_filename("Taylor Swift - NewAlbum.mp3")
+#song12 = Song.new_from_filename("Taylor Swift - NewAlbum.mp3")
 
-Song.destroy_all
-puts song12.name
-puts song12.artist_name
+#Song.destroy_all
+#puts song12.name
+#puts song12.artist_name
 #puts song10
 #puts song11
 #puts Song.find_by_name("BlankSpace")
