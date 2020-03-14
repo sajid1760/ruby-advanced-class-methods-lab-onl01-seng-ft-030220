@@ -88,7 +88,7 @@ end
 
 #song5 = Song.create_by_name("The Middle")
 #song6 = Song.create_by_name("The End")
-
+Song.destroy_all
 song10 = Song.find_or_create_by_name("Alison")
 song11 = Song.find_or_create_by_name("Alison")
 
