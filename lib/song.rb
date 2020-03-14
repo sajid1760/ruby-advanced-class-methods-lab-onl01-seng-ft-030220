@@ -47,6 +47,14 @@ class Song
   rett
  end
  
+ def self.alphabetical
+   returnarray = []
+   @all.each do |eachsong|
+     returnarray << eachsong.name
+   end
+   returnarray.sort
+ end
+ 
  def self.new_from_filename(filename)
    namearray = filename.split(" - ")
    artistname = namearray[0]
