@@ -15,14 +15,22 @@ class Song
   end
 
   def self.create
-    person = self.new
-    person.save
-    person
+    song = self.new
+    song.save
+    song
+  end
+  
+  def self.new_by_name(name)
+    song = self.new 
+    song.name = name
+    song.save
+    song
   end
   
 end
 
 song3 = Song.create
 
+song4 = Song.new_by_name("The Middle")
 
-puts Song.all.include?(song3)
+puts song4.name
