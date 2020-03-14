@@ -49,11 +49,13 @@ class Song
  
  def self.alphabetical
    returnarray = []
+   sortedarray = []
    @@all.each do |eachsong|
-     returnarray << eachsong.name
+     sortedarray << eachsong.name
    end
-   puts returnarray.sort.inspect
-   returnarray.sort
+   sortedarray = returnarray.sort
+   returnarray.each do |eachsong|
+     
  end
  
  def self.new_from_filename(filename)
