@@ -48,8 +48,7 @@ class Song
  end
  
  def self.alphabetical
-   returnarray = []
-   @all.each do |eachsong|
+   @@all.each do |eachsong|
      returnarray << eachsong.name
    end
    returnarray.sort
