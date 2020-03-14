@@ -58,8 +58,8 @@ class Song
  
  def self.create_from_filename(filename)
    namearray = filename.split(" - ")
-   name = namearray[0]
-   artistname = namearray[1].chomp(".mp3")
+   artistname = namearray[0]
+   name = namearray[1].chomp(".mp3")
    song = Song.find_or_create_by_name(name)
    song.artist_name = artistname
    song
