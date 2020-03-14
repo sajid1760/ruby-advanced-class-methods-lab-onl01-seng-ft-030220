@@ -34,10 +34,11 @@ class Song
   end
   
   def self.find_by_name(name)
+    rett = ""
     Song.all.each do |song|
-      if song.name == name then ret = song end
+      if song.name == name then rett = song end
      end
-  ret
+  rett
  end
   
 end
