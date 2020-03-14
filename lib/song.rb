@@ -25,4 +25,4 @@ end
 song3 = Song.create
 
 
-puts song.all.include?(song3)
+puts Song.all.include?(song3)
