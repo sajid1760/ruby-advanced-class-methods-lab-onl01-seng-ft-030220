@@ -34,7 +34,7 @@ class Song
   end
   
   def self.find_by_name(name)
-    rett = ""
+    rett = FALSE
     Song.all.each do |song|
       if song.name == name then rett = song end
      end
@@ -43,7 +43,7 @@ class Song
   
   def self.find_or_create_by_name(name)
     rett = Song.find_by_name(name)
-    if rett == "" then rett = Song.create_by_name(name) end
+    if rett == FALSE then rett = Song.create_by_name(name) end
   rett
  end
  
