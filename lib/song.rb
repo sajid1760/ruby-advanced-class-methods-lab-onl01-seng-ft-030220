@@ -47,6 +47,12 @@ class Song
   rett
  end
  
+ def self.new_from_filename(filename)
+   namearray = filename.split(" - ")
+   name = namearray[0]
+   song = Song.find_or_create_by_name(name)
+   song.artist_name = 
+ 
 end
 
 song3 = Song.create
