@@ -23,7 +23,13 @@ class Song
   def self.new_by_name(name)
     song = self.new 
     song.name = name
+    song
+  end
+  
+  def self.create_by_name(name)
+    song = self.new 
     song.save
+    song.name = name
     song
   end
   
@@ -31,6 +37,6 @@ end
 
 song3 = Song.create
 
-song4 = Song.new_by_name("The Middle")
+song5 = Song.create_by_name("The Middle")
 
-puts song4.name
+puts Song.all.include?(song5)
