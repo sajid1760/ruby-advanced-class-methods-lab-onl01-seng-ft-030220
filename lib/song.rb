@@ -53,9 +53,11 @@ class Song
    @@all.each do |eachsong|
      sortedarray << eachsong.name
    end
-   sortedarray = returnarray.sort
-   returnarray.each do |eachsong|
-     
+   sortedarray = sortedarray.sort
+   sortedarray.each do |eachsong|
+     returnarray << Song.find_by_name(eachsong)
+   end
+   returnarray
  end
  
  def self.new_from_filename(filename)
