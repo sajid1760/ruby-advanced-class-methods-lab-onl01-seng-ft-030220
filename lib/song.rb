@@ -25,4 +25,4 @@ end
 song3 = Song.new
 
 
-puts Song3
+puts song3
