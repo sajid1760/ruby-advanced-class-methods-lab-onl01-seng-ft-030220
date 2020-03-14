@@ -41,12 +41,25 @@ class Song
   rett
  end
   
+  def self.find_or_create_by_name(name)
+    rett = ""
+    Song.all.each do |song|
+      if song.name == name then rett = song 
+      else rett = Song.create_by_name(name)
+      end
+     end
+  rett
+ end
+ 
 end
 
 song3 = Song.create
 
 song5 = Song.create_by_name("The Middle")
 song6 = Song.create_by_name("The End")
+
+song10 = Song.find_or_create_by_name("BlankSpace")
+song11 = Song.find_or_create_by_name("BlankSpace")
 
 #puts Song.all.include?(song5)
 
