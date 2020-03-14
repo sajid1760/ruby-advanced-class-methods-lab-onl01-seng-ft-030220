@@ -52,7 +52,7 @@ class Song
    @@all.each do |eachsong|
      returnarray << eachsong.name
    end
-   puts returnarray.sort
+   puts returnarray.sort.inspect
    returnarray.sort
  end
  
