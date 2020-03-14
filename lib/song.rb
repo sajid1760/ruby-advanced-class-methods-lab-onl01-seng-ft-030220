@@ -65,6 +65,10 @@ class Song
    song
  end
  
+ def self.destroy_all
+   @@all = []
+ end
+ 
 end
 
 song3 = Song.create
@@ -77,6 +81,7 @@ song11 = Song.find_or_create_by_name("BlankSpace")
 
 song12 = Song.new_from_filename("Taylor Swift - NewAlbum.mp3")
 
+Song.destroy_all
 puts song12.name
 puts song12.artist_name
 #puts song10
