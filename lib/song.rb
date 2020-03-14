@@ -16,6 +16,7 @@ class Song
 
   def self.create
     self.new
+    save
   end
   
 end
@@ -23,4 +24,4 @@ end
 song3 = Song.create
 
 
-puts song3
+puts song.all.include?(song3)
