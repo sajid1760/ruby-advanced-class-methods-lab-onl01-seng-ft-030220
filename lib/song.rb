@@ -15,14 +15,12 @@ class Song
   end
 
   def create
-    initialize
-    save
-    self
+    self.new
   end
   
 end
 
-song3 = Song.new
+song3 = Song.create
 
 
 puts song3
