@@ -13,4 +13,10 @@ class Song
   def create
     save
     self
+  end
+  
 end
+
+song3 = Song.create
+
+puts Song.all.include?(song3)
