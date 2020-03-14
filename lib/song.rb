@@ -43,7 +43,7 @@ class Song
   
   def self.find_or_create_by_name(name)
     rett = FALSE
-    #rett = Song.find_by_name(name)
+    rett = Song.find_by_name(name)
     if rett == FALSE then rett = Song.create_by_name(name) end
   rett
  end
